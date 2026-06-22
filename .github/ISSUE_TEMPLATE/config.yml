@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Agnes AI documentation
+    url: https://agnes-ai.com/doc/overview
+    about: Read the official documentation before opening an issue.
+  - name: Agnes AI platform
+    url: https://platform.agnes-ai.com/
+    about: Manage API keys, account access, and platform settings.
+
