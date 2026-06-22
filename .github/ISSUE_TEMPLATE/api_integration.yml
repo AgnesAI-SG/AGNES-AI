@@ -1,0 +1,69 @@
+name: API integration issue
+description: Report a problem integrating with the Agnes AI API.
+title: "[API]: "
+labels: ["api", "support", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an Agnes AI API integration issue.
+
+        Do not include API keys, bearer tokens, private logs, account data, or customer content.
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: "Example: agnes-2.0-flash, agnes-image-2.1-flash, agnes-video-v2.0"
+      placeholder: agnes-2.0-flash
+    validations:
+      required: true
+  - type: input
+    id: endpoint
+    attributes:
+      label: Endpoint
+      description: "Example: POST /v1/chat/completions"
+      placeholder: POST /v1/chat/completions
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: SDK or client
+      description: "Example: OpenAI Python SDK, OpenAI Node SDK, curl, Codex, OpenClaw"
+      placeholder: OpenAI Python SDK
+  - type: textarea
+    id: request
+    attributes:
+      label: Minimal sanitized request
+      description: Remove all secrets before posting.
+      render: json
+  - type: textarea
+    id: error
+    attributes:
+      label: Error response
+      description: Include status code and sanitized response body.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Is this reproducible?
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
+    validations:
+      required: true
