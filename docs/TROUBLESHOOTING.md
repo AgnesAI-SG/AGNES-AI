@@ -1,6 +1,6 @@
 # Troubleshooting Agnes AI API Integrations
 
-Last updated: `2026-06-22 00:00 Asia/Shanghai`
+Last updated: `2026-06-22 00:00 Asia/Singapore`
 
 Use this guide when an Agnes AI API integration fails or behaves differently than expected.
 
