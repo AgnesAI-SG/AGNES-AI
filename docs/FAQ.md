@@ -36,7 +36,7 @@ Limits may change over time. Always confirm production-critical values in the of
 
 ## What is the current `agnes-2.0-flash` context window?
 
-The current public reference value is `256K` context and `64K` max output. The temporary `1M` context window was rolled back in June 2026 for stability.
+The current public reference value is `512K` context and `64K` max output. 
 
 ## How do I query video results?
 
